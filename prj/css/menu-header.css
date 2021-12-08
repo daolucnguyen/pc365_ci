@@ -1,0 +1,213 @@
+#header_nav{
+    background-color: unset;
+    border: none;
+    margin-bottom: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: unset;
+}
+#header_ul{
+    display: flex;
+    align-items: center; 
+}
+.header-li a{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 153.69%;
+    color: #081B2B;
+    position: relative;
+}
+
+#menu_profile{
+    padding-right: 10px;
+}
+#header_link_home,
+#header_link_gthieu,
+#header_link_hdan,
+#header_link_download,
+#header_link_news{
+    color: #081B2B;
+}
+#header_link_home,
+#header_link_gthieu,
+#header_link_hdan,
+#header_link_download,
+#header_link_news,
+#header_link_notifi,
+#header_link_profile{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#header_link_home:hover,
+#header_link_gthieu:hover,
+#header_link_hdan:hover,
+#header_link_download:hover,
+#header_link_news:hover{
+    color: #206AA9;
+}
+
+
+#menu_notifi_dot{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    /* display: none; */
+}
+.header-tab{
+    /* display: none; */
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width:1025px){
+    .q-menu-sidebar{
+        display: none;
+    }
+    #header_nav{
+        display: none;
+    }
+    .header-tab{
+        display: block;
+        position: relative;
+    }
+    #menu_logo{
+        position: absolute;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 93px;
+        height: 33px;
+    }
+    #menu_header{
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    #header_menu{
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .list-menu{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        top: 60px;
+    }
+    .list-menu-tab{
+        width: 95%;
+        background: #FFFFFF;
+        border-radius: 0px 0px 0px 20px;
+        padding: 30px;
+        /* box-shadow: 0px 2px 10px rgb(0 0 0 / 5%); */
+        right: 0;
+        position: absolute;
+        top: -1px;
+    }
+    .menu-qly{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    .q-menu-logo{
+        display: none;
+    }
+    .nav-item:first-child{
+        margin-top: 0;
+    }
+    .nav-item{
+        margin: 20px 0;
+    }
+    .img-drop{
+        position: relative;
+        margin-left: 40px;
+        right: 0;
+    }
+    .list-profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .list-profile img:first-child{
+        width: 35px;
+        height: 35px;
+    }
+    .list-profile img:last-child{
+        width: 19px;
+        height: 22px;
+    }
+    .list-profile span{
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 153.69%;
+        color: #081B2B;
+    }
+    .list-menu-control{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 19px;
+        position: relative;
+    }
+    .list-menu-control-link{
+        width: 50%;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 153.69%;
+        color: #081B2B;
+    }
+    .list-menu-control-link:nth-child(even){
+        display: flex;
+        justify-content: flex-end;
+    }
+    .list-menu-page{
+        margin-top: 30px;
+    }
+    .list-profile::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #E0E0E0;
+        position: absolute;
+        bottom: -18px;
+    }
+    .list-menu-control::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed #E0E0E0;
+        position: absolute;
+        bottom: -15px;
+    }
+    
+
+}
+@media only screen and (max-width:541px){
+    #menu_logo{
+        width: 93px;
+        height: 33px;
+        left: 20px;
+    }
+    #menu_header{
+        width: 26px;
+        height: 14px;
+        right: 20px;
+    }
+    .list-menu{
+        height: 80%;
+        width: 100%;
+    }
+}

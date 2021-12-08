@@ -1,0 +1,192 @@
+RewriteEngine On    
+RewriteBase /   
+
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#    RewriteCond %{HTTPS} off
+#    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#    RewriteCond %{HTTP_HOST} www\.(.+)$ [NC]
+#    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+#</IfModule>
+
+
+#Trang chủ
+RewriteRule  ^$ /home/index.php
+
+#Giới thiệu
+RewriteRule ^gioi-thieu.html$        /home/gioithieu.php
+
+#Hướng dẫn
+RewriteRule ^huong-dan.html$        /home/huongdan.php
+
+#Download
+RewriteRule ^download.html$        /home/download.php
+
+#Đăng ký nhân viên bước 1
+RewriteRule ^dang-ky-nhan-vien-buoc-1.html$        /home/nv_dangky_1.php
+
+#Đăng ký nhân viên bước 2
+RewriteRule ^dang-ky-nhan-vien-buoc-2.html$        /home/nv_dangky_2.php
+
+#Xác thực OTP đăng ký nhân viên
+RewriteRule ^xac-thuc-dang-ky-tai-khoan-nhan-vien.html$        /home/nv_dangky_3.php
+
+#Hoàn tất đăng ký tài khoản nhân viên
+RewriteRule ^hoan-tat-dang-ky-tai-khoan-nhan-vien.html$        /home/nv_dangky_4.php
+
+#Quên mật khẩu nhân viên bước 1
+RewriteRule ^quen-mat-khau-tai-khoan-nhan-vien-buoc-1.html$        /home/nv_qmk_1.php
+
+#Xác thực OTP quên mật khẩu nhân viên
+RewriteRule ^xac-thuc-quen-mat-khau-nhan-vien.html$        /home/nv_qmk_2.php
+
+#Đổi mật khẩu nhân viên qua OTP
+RewriteRule ^doi-mat-khau-nhan-vien-qua-otp.html$        /home/nv_qmk_3.php
+
+#Quản lý chung nhân viên
+RewriteRule ^danh-cho-nhan-vien/quan-ly-chung.html$          /home/nv_qly_chung.php
+
+#Quản lý chấm công nhân viên
+RewriteRule ^danh-cho-nhan-vien/quan-ly-cham-cong.html$          /home/nv_qly_chamcong.php
+
+#Quản lý lịch trình nhân viên
+RewriteRule ^danh-cho-nhan-vien/quan-ly-lich-trinh.html$          /home/nv_qly_lichtrinh.php
+
+#Lịch trình map nhân viên
+RewriteRule ^danh-cho-nhan-vien/quan-ly-lich-trinh-map.html$          /home/nv_lichtrinh_map.php
+
+#Nhận việc nhân viên
+RewriteRule ^danh-cho-nhan-vien/nhan-viec.html$          /home/nv_qly_nhanviec.php
+
+#Chi tiết công việc 
+RewriteRule ^danh-cho-nhan-vien/chi-tiet-cong-viec.html$          /home/job_details.php
+
+#Chi tiết nhân viên
+RewriteRule ^danh-cho-nhan-vien/chi-tiet-nhan-vien.html$          /home/nv_details.php
+
+#Cập nhật thông tin nhân viên
+RewriteRule ^danh-cho-nhan-vien/cap-nhat-thong-tin.html$          /home/nv_update.php
+
+#Đổi mật khẩu nhân viên
+RewriteRule ^danh-cho-nhan-vien/doi-mat-khau.html$          /home/nv_doi_mk.php
+
+#Báo lỗi của nhân viên
+RewriteRule ^danh-cho-nhan-vien/bao-loi.html$          /home/nv_baoloi.php
+
+#Đổi mật khẩu nhân viên
+RewriteRule ^danh-cho-nhan-vien/doi-mat-khau.html$          /home/nv_doi_mk.php
+
+
+
+
+
+
+
+
+
+
+#Đăng nhập 
+RewriteRule ^dang-nhap.html$        /home/dang_nhap.php
+
+#Đăng ký chung
+RewriteRule ^dang-ky.html$          /home/signup_general.php
+
+#Đăng ký công ty
+RewriteRule ^dang-ky-cong-ty.html$          /home/dang_ky_cty.php
+
+#Xác thức đăng ký công ty
+RewriteRule ^xac-thuc-dang-ky-tai-khoan-cong-ty.html$          /home/x.php
+
+#Đăng ký công ty page 3
+RewriteRule ^hoan-tat-dang-ky.html$          /home/dang_ky_cty3.php
+
+
+#Quản lý chung công ty
+RewriteRule ^danh-cho-cong-ty/quan-ly-chung.html$          /home/quan_ly_cty.php
+
+#Quản lý chấm công
+RewriteRule ^danh-cho-cong-ty/quan-ly-cham-cong.html$          /home/qly_cham_cong.php
+
+#Quản lý nhân viên
+RewriteRule ^danh-cho-cong-ty/quan-ly-nhan-vien.html$          /home/qly_nhan_vien.php
+
+#Quản lý lịch trình
+RewriteRule ^danh-cho-cong-ty/quan-ly-lich-trinh.html$          /home/lich_trinh_nv.php
+
+#Tạo lịch trình
+RewriteRule ^danh-cho-cong-ty/tao-lich-trinh.html$          /home/tao_lich_trinh.php
+
+#Sửa lịch trình
+RewriteRule ^danh-cho-cong-ty/sua-lich-trinh.html$          /home/sua_lich_trinh.php
+
+#Lịch trình trên map
+RewriteRule ^danh-cho-cong-ty/lich-trinh-nhan-vien-tren-map.html$          /home/lich_trinh_map.php
+
+#Nhân viên đồng lịch trình
+RewriteRule ^danh-cho-cong-ty/nhan-vien-cung-lich.html$          /home/nv_cung_lich.php
+
+#Nhân viên đồng lịch trình
+RewriteRule ^danh-cho-cong-ty/giao-viec.html$          /home/qly_giao_viec.php
+
+#Chi tiết công việc
+RewriteRule ^danh-cho-cong-ty/chi-tiet-cong-viec.html$          /home/chitiet_cong_viec.php
+
+#Tạo công việc
+RewriteRule ^danh-cho-cong-ty/tao-cong-viec.html$          /home/tao_cong_viec.php
+
+#Thông tin công ty
+RewriteRule ^danh-cho-cong-ty/cap-nhat-thong-tin-cong-ty.html$          /home/cty_thongtin.php
+
+#Cập nhật thông tin công ty
+RewriteRule ^danh-cho-cong-ty/sua-thong-tin-cong-ty.html$          /home/cty_update_thongtin.php
+
+#Đổi mật khẩu công ty
+RewriteRule ^danh-cho-cong-ty/doi-mat-khau-cong-ty.html$          /home/cty_doi_mk.php
+
+#Báo lỗi của công ty
+RewriteRule ^danh-cho-cong-ty/bao-loi.html$          /home/cty_baoloi.php
+
+#Sửa công việc
+RewriteRule ^danh-cho-cong-ty/sua-cong-viec.html$          /home/sua_cong_viec.php
+
+#Danh sách công ty con
+RewriteRule ^danh-cho-cong-ty/danh-sach-cong-ty-con.html$          /home/ds_cty_con.php
+
+#Danh sách phòng ban
+RewriteRule ^danh-cho-cong-ty/danh-sach-phong-ban.html$          /home/ds_phong_ban.php
+
+#Danh sách nv phòng kỹ thuật
+RewriteRule ^danh-cho-cong-ty/danh-sach-nhan-vien-phong-ky-thuat.html$          /home/ds_nv_ky_thuat.php
+
+#Danh sách nv phòng nhân sự
+RewriteRule ^danh-cho-cong-ty/danh-sach-nhan-vien-phong-nhan-su.html$          /home/ds_nv_nhan_su.php
+
+#Danh sách nv phòng kinh doanh
+RewriteRule ^danh-cho-cong-ty/danh-sach-nhan-vien-phong-kinh-doanh.html$          /home/ds_nv_kinh_doanh.php
+
+#Quyền truy cập
+RewriteRule ^danh-cho-cong-ty/quyen-truy-cap.html$          /home/quyen_truy_cap.php
+
+#Cấu hình chấm công
+RewriteRule ^danh-cho-cong-ty/cau-hinh-cham-cong.html$          /home/cau_hinh_cham_cong.php
+
+#danh sách ca làm
+RewriteRule ^danh-cho-cong-ty/danh-sach-ca-lam.html$          /home/ds_ca_lam.php
+
+#danh sách lịch làm việc
+RewriteRule ^danh-cho-cong-ty/danh-sach-lich-lam-viec.html$          /home/ds_llv.php
+
+#Thêm lịch làm việc
+RewriteRule ^danh-cho-cong-ty/thiet-lap-lich-lam-viec.html$          /home/them_llv.php
+
+#Sửa lịch làm việc
+RewriteRule ^danh-cho-cong-ty/sua-lich-lam-viec.html$          /home/sua_llv.php
+
+#Thêm nhân viên
+RewriteRule ^danh-cho-cong-ty/them-nhan-vien.html$          /home/them_nhan_vien.php
+
+#Danh sách nhân viên thuộc lịch
+RewriteRule ^danh-cho-cong-ty/danh-sach-nhan-vien-co-lich.html$          /home/ds_nv_co_lich.php
+
+#Lịch làm việc của nhân viên
+RewriteRule ^danh-cho-cong-ty/lich-lam-viec-cua-nhan-vien.html$          /home/llv_cua_nv.php

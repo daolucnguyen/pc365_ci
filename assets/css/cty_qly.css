@@ -1,0 +1,456 @@
+.q-sidebar-left {
+    width: 100%;
+}
+
+.q-qly-thongtin-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 153.69%;
+    text-transform: capitalize;
+    color: #081B2B;
+}
+
+.q-qly-cty-thongtin {
+    width: 100%;
+    height: 286px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 81px;
+    position: relative;
+}
+
+.q-qly-cty-avatar {
+    width: 170px;
+    height: 170px;
+    background: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    left: 40px;
+    top: -63px;
+}
+
+.q-qly-cty-avatar-v2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.q-qly-cty-qr {
+    width: 108px;
+    height: 107px;
+    background: url(../images/cty-qr.png);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 71px;
+    top: 127px;
+}
+
+.q-qly-cty-info {
+    width: 79.6%;
+    position: absolute;
+    right: 0;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.q-qly-cty-info-v2 {
+    width: 79.6%;
+    position: absolute;
+    right: 0;
+    top: 86px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.q-qly-cty-row {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.q-qly-cty-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 153.69%;
+    color: #081B2B;
+}
+
+.q-qly-cty-id {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.q-qly-cty-row-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #F79722;
+    margin-right: 10px;
+}
+
+.q-qly-cty-row-tite {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+    margin-right: 8px;
+}
+
+.q-qly-cty-row-info {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.q-qly-cty-thongtin-collapse:hover div {
+    cursor: pointer;
+    display: block;
+}
+
+.l_hover_option:hover div {
+    display: block;
+}
+
+.q-qly-cty-thongtin-collapse {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 14px;
+    height: 23px;
+    padding: 5px;
+}
+
+.q-qly-cty-thongtin-collapse-div {
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    /* width: 55px;
+    height: 84px; */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.q-qly-cty-thongtin-collapse-div-v2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.q-qly-cty-thongtin-collapse-link {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.q-qly-cty-thongtin-collapse-link:hover {
+    color: #206AA9;
+    cursor: pointer;
+}
+
+#cty_collapse_qr {
+    display: none;
+}
+
+#cty_collapse {
+    display: none;
+}
+
+@media only screen and (max-width:1025px) {
+    #cty_collapse_qr {
+        display: block;
+    }
+    .q-qly-cty-thongtin-collapse-div {
+        /* width: 68px;
+        height: 108px; */
+    }
+    .q-qly-cty-qr {
+        display: none;
+    }
+    .q-qly-cty-thongtin {
+        height: 235px;
+    }
+    .q-qly-cty-info-v2 {
+        width: 100%;
+    }
+    .q-qly-cty-info {
+        width: 72.6%;
+    }
+}
+
+@media only screen and (max-width:610px) {
+    .q-qly-cty-avatar {
+        width: 120px;
+        height: 120px;
+        padding: 7.06px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .q-qly-cty-avatar-v2 {
+        width: 105px;
+        height: 105px;
+    }
+    .q-qly-cty-info {
+        width: 100%;
+        padding: 78px 20px;
+    }
+    .q-qly-cty-info-v2 {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .q-qly-cty-thongtin {
+        height: 329px;
+    }
+    .q-qly-cty-row {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .q-qly-cty-info-v2 {
+        top: unset;
+        bottom: 45px;
+    }
+}
+
+
+/* cập nhật thông tin công ty */
+
+.q-cty-update {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-top: 25px;
+    position: relative;
+    padding: 40px;
+}
+
+#input_cty_avatar {
+    display: none;
+}
+
+.q-cty-update-avatar {
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.q-cty-update-avatar:hover {
+    cursor: pointer;
+}
+
+.q-cty-update-avatar-img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.q-cty-update-form {
+    width: 100%;
+    top: 220px;
+    text-align: center;
+}
+
+.q-cty-update-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.q-cty-update-row-control {
+    width: 47%;
+}
+
+.q-cty-update-row-label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    color: #081B2B;
+}
+
+.l_lable_camera {
+    background: linear-gradient(0deg, rgba(32, 106, 169, 0.6), rgba(32, 106, 169, 0.6));
+    position: absolute;
+    /* top: 50px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.l_lable_camera img {
+    margin-top: 40%;
+}
+
+.q-cty-update-row-input {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 11px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: justify;
+    color: #888888;
+}
+
+.q-cty-update-button {
+    padding-top: 0;
+    display: inline-flex;
+    height: auto;
+}
+
+@media only screen and (max-width:1025px) {
+    .q-cty-update {
+        box-shadow: none;
+        padding: 0;
+    }
+    .q-cty-update-button {
+        margin-top: 15px;
+    }
+    .q-cty-update-row {
+        margin-bottom: 15px;
+    }
+    .q-cty-update-row {
+        width: 100%;
+    }
+    .q-cty-update-avatar {
+        width: 125px;
+        height: 125px;
+    }
+    .q-cty-update-form {
+        top: 165px;
+        text-align: center;
+    }
+    .q-qly-thongtin-title {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:541px) {
+    .q-cty-update-avatar {
+        width: 105px;
+        height: 105px;
+    }
+    .q-cty-update-form {
+        top: 130px;
+        text-align: center;
+    }
+    .q-cty-update-row-control {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .q-cty-update-button {
+        justify-content: space-between;
+    }
+    .reform-cty-update {
+        margin: 0;
+        width: 32.5%;
+    }
+    .submit-cty-updade {
+        margin: 0;
+        width: 60%;
+    }
+    .q-qly-thongtin-title {
+        text-align: center;
+    }
+}
+
+
+/* đổi mạt khẩu công ty */
+
+.q-cty-doimk {
+    width: 100%;
+    height: 424px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.q-cty-doimk-form {
+    width: 43.6%;
+    padding: 40px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.q-cty-doimk-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.q-cty-doimk-row-control {
+    position: relative;
+}
+
+.q-cty-doimk-button {
+    display: flex;
+    justify-content: center;
+}
+
+.q-cty-doimk-icon {
+    position: absolute;
+    bottom: 33px;
+    right: 18px;
+}
+
+.q-cty-doimk-icon:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1025px) {
+    .q-cty-doimk {
+        box-shadow: none;
+        padding: 0;
+    }
+    .q-cty-doimk-form {
+        width: 58.59%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:541px) {
+    .q-cty-doimk-form {
+        width: 100%;
+    }
+    .q-cty-doimk-button {
+        justify-content: space-between;
+    }
+}
+
+#submit_baoloi_modal {
+    display: none;
+}

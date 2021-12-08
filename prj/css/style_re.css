@@ -1,0 +1,429 @@
+.form_dang_nhap {
+    background: url("../images/bgr_login_2.webp") no-repeat;
+    background-size: 100%;
+    padding-top: 50px;
+    padding-bottom: 355px;
+    text-align: center;
+}
+h1.tt_login {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.fr_log_in {
+    width: 600px;
+    /* margin: auto; */
+    background: #FFFFFF;
+    box-shadow: 4px 4px 40px rgb(32 106 169 / 10%);
+    border-radius: 5px;
+    display: inline-block;
+}
+.login {
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    background: #ECF6FF;
+}
+.login_cty,.login_nv{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 10px;
+    color: #1F3F77;
+}
+
+.login_cty {
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+}
+.login_nv {
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+}
+.login_cty:hover,.login_nv:hover,
+.login_cty:focus,.login_nv:focus{
+    text-decoration: none;
+}
+.login_cty.active,.login_nv.active {
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    border-top: 5px solid #206AA9;
+    color: #206AA9;
+}
+.login_cty_form {
+    width: 100%;
+    /* float: left; */
+    clear: both;
+    padding: 45px 66px 66px 66px;
+}
+.login-p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 153.69%;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333333;
+}
+.login_cty_form>.email,.login_cty_form>.pass {
+    padding: 12px 20px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.tab-company{
+    display: none;
+}
+.tab-company.active{
+    display: block;
+}
+.email{
+    margin-bottom:25px;
+
+}
+.pass{
+    margin-bottom: 15px;
+    position: relative;
+}
+.input-mail{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 0 12px 20px;
+}
+.input-mail::placeholder{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+}
+.img-pass{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+.quen_pass {
+    text-align: right;
+    margin-bottom: 30px;
+}
+.quen_pass a {
+    font-weight: normal;
+    line-height: 153.69%;
+    color: #888888;
+}
+button.dang_nhap {
+    width: 100%;
+    background: #0D71BA;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 18px;
+    /* line-height: 25px; */
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:1024px) {
+    .form_dang_nhap {
+        background-size: 100% 40%;
+        padding: 60px 84px 70px;
+    }
+    .fr_log_in {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:540px) {
+    .form_dang_nhap {
+        padding: 50px 20px;
+        background-size: 100% 70%;
+    }
+    .fr_log_in {
+        width: 100%;
+    }
+    .login_cty_form {
+        padding: 45px 20px 66px 20px;
+    }
+}
+ /* Đăng ký chung */
+.dang-ky-chung{
+    width: 100%;
+    height: 664px;
+    background: url("../images/bgr_choose_signup.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 60px 0 333px;
+    text-align: center;
+}
+.chooses{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.chooses1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+.chooses1-v1{
+    padding: 25px 60px;
+    text-align: center;
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 40px rgba(32, 106, 169, 0.1);
+    border-radius: 10px;
+}
+.img-company{
+    background: url("../images/company.svg");
+}
+.img-staff{
+    background: url("../images/staff.svg");
+}
+.img-company,.img-staff{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.chooses1-v1:hover .img-company,.chooses1-v1:focus .img-company{
+    background: url("../images/company2.svg");
+}
+.chooses1-v1:hover .img-staff,.chooses1-v1:focus .img-staff{
+    background: url("../images/staff2.svg");
+}
+.chooses1-v1:hover .img-company,.chooses1-v1:focus .img-company,
+.chooses1-v1:hover .img-staff,.chooses1-v1:focus .img-staff{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.signup-company{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #333333;
+    padding-top: 4px;
+}
+@media only screen and (max-width:1435px){
+    .dang-ky-chung {
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:1025px){
+    .dang-ky-chung {
+        height: 537px;
+        padding: 60px 0 246px;
+    }
+}
+@media only screen and (max-width:540px){
+    .dang-ky-chung {
+        padding: 40px 0 ;
+    }
+    .chooses1 {
+        display: inline-block;
+        padding-top: 30px;
+    }
+    .chooses1-v1 {
+        margin: 12px 0;
+    }
+}
+/* Đăng ký công ty */
+.form-dky-cty{
+    background: url("../images/bgr_login_2.webp") no-repeat;
+    background-size: 100%;
+    padding: 50px 322px 146px;
+    text-align: center;
+}
+.d-dang-ky-cty{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 40px rgba(32, 106, 169, 0.1);
+    border-radius: 10px;
+    padding: 25px 10px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.d-dang-ky-cty2,.d-dang-ky-cty3{
+    width: 100%;
+    text-align: left;
+    padding-top: 32px;
+    display: inline-block;
+}
+.d-dang-ky-cty3{
+    padding-top: 40px;
+}
+.d-dky-cty2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #1F3F77;
+    padding-bottom: 25px;
+}
+.form-dky-cty2{
+    margin-top: 0;
+}
+.label-dky-cty{
+    margin-bottom: 10px;
+}
+.d-form-control{
+    width: 100%;
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.d-form-control::placeholder{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999999;
+}
+.d-dky-cty4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.button-reset{
+    width: 140px;
+    padding: 10px 0;
+    background: #FFF;
+    border: 1px solid #0D71BA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.button-submit{
+    width: 140px;
+    padding: 10px 0;
+    background: #0D71BA;
+    border-radius: 5px;
+    border: none;
+}
+.reset-p,.submit-p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;    
+    color: #0D71BA;
+}
+.submit-p{
+    color: #FFF;
+}
+/* Tablet đăng ký cty */
+@media only screen and (max-width: 1025px) {
+    .form-dky-cty {
+        background-size: 100% 40%;
+        padding: 60px 25px 70px;
+    }
+}
+@media only screen and (max-width:540px) {
+    .dky-cty{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .form-dky-cty {
+        padding: 50px 20px;
+        background-size: 100% 70%;
+    }
+    .d-dky-cty4 {
+        padding: 40px 15px 0;
+    }
+    .button-reset{
+        margin-right: 15px;
+    }
+}
+
+/* xác thực tài khoản công ty */
+.otp-cty{
+    width: 100%;
+    padding-top: 50px;
+}
+.otp-p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+.otp-cty2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.otp-input{
+    width: 44px;
+    height: 44px;
+    border: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0 7px;
+    background: #FFFFFF;
+    border: 1px solid #DFE3E6;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.otp-cty3{
+    width: 100%;
+    text-align: center;
+    padding-top: 27px;
+}
+.otp-cty3-p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #888888;
+}
+.d-gui-lai-ma{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #206AA9;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+}
+.d-gui-lai-ma:hover{
+    color: #363636;
+}
+@media only screen and (max-width:540px){
+    .otp-input {
+        width: 38px;
+        height: 38px;
+        margin: 0 4px;
+    }
+    .otp-p {
+        text-align: left;
+    }
+}
+
+/* đăng ký trang 3 */
+.form-dky-cty2 .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 40px;
+}
+.form-dky-cty2 .select2-container .select2-selection--single,
+.form-dky-cty2 .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px;
+}
